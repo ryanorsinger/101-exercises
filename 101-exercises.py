@@ -167,7 +167,7 @@ print("Exercise 10 is correct")
 # ## Basic Functions
 # ![](http://)**Hint** Be sure to `return` values from your function definitions. The assert statements will call your function(s) for you.
 
-# In[1]:
+# In[ ]:
 
 
 # Run this cell in order to generate some numbers to use in our functions after this.
@@ -501,7 +501,7 @@ print("Exercise 30 is correct.")
 
 assert cube(3) == 27
 assert cube(2) == 8
-assert cube(5) == 127
+assert cube(5) == 125
 assert cube(positive_odd_number) == positive_odd_number * positive_odd_number * positive_odd_number
 print("Exercise 31 is correct.")
 
@@ -515,20 +515,7 @@ print("Exercise 31 is correct.")
 assert square_root(4) == 2.0
 assert square_root(64) == 8.0
 assert square_root(81) == 9.0
-assert square_root(positive_odd_number) == positive_odd_number ** .5
 print("Exercise 32 is correct.")
-
-
-# In[ ]:
-
-
-# Exercise 33
-# Write a function definition named cube_root that takes in a number and returns the square root of the provided number
-
-assert cube_root(8) == 2.0
-assert cube_root(27) == 3.0
-assert cube_root(125) == 5.0
-print("Exercise 33 is correct.")
 
 
 # In[ ]:
@@ -538,7 +525,7 @@ print("Exercise 33 is correct.")
 # Write a function definition named subtract that takes in two numbers and returns the first minus the second argument.
 
 assert subtract(8, 6) == 2
-assert subtract(27 - 4) == 23
+assert subtract(27, 4) == 23
 assert subtract(12, 2) == 10
 print("Exercise 33 is correct.")
 
@@ -563,6 +550,7 @@ print("Exercise 34 is correct.")
 
 assert divide(27, 9) == 3
 assert divide(15, 3) == 5
+assert divide(5, 2) == 2.5
 assert divide(10, 2) == 5
 print("Exercise 35 is correct.")
 
@@ -571,7 +559,7 @@ print("Exercise 35 is correct.")
 
 
 # Exercise 36
-# Write a function definition named quotient that takes in two numbers and returns only the quotient first argument quotientd by the second argument.
+# Write a function definition named quotient that takes in two numbers and returns only the quotient first argument quotient by the second argument.
 
 assert quotient(27, 9) == 3
 assert quotient(5, 2) == 2
@@ -610,7 +598,7 @@ print("Exercise 38 is correct.")
 # Write a function definition named times_two_plus_three that takes in a number, multiplies it by two, adds 3 and returns the result.
 
 assert times_two_plus_three(0) == 3
-assert times_two_plus_three(1) = 5
+assert times_two_plus_three(1) == 5
 assert times_two_plus_three(2) == 7
 assert times_two_plus_three(3) == 9
 assert times_two_plus_three(5) == 13
@@ -624,7 +612,7 @@ print("Exercise 39 is correct.")x)
 # Write a function definition named area_of_rectangle that takes in two numbers and returns the product.
 
 assert area_of_rectangle(1, 3) == 3
-assert area_of_rectangle(5, 2) = 10
+assert area_of_rectangle(5, 2) == 10
 assert area_of_rectangle(2, 7) == 14
 assert area_of_rectangle(5.3, 10.3) == 54.59
 print("Exercise 40 is correct.")
@@ -647,7 +635,6 @@ print("Exercise 41 is correct.")
 
 
 import math
-
 # Exercise 42
 # Write a function definition named circumference that takes in a number representing a circle's radius and returns the circumference.
 
