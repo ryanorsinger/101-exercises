@@ -602,7 +602,7 @@ assert times_two_plus_three(1) == 5
 assert times_two_plus_three(2) == 7
 assert times_two_plus_three(3) == 9
 assert times_two_plus_three(5) == 13
-print("Exercise 39 is correct.")x)
+print("Exercise 39 is correct.")
 
 
 # In[ ]:
@@ -919,7 +919,7 @@ print("Exercise 63 is correct.")
 # Write a function definition named product_of_all that takes in sequence of numbers and returns the product of multiplying all the numbers together
 
 assert product_of_all([1, 2, 3]) == 6
-assert product_of_all([3, 4, 5]) = 60
+assert product_of_all([3, 4, 5]) == 60
 assert product_of_all([2, 2, 3, 0]) == 0
 print("Exercise 64 is correct.")
 
