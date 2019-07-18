@@ -382,7 +382,7 @@ print("Exercise 26 is correct.")
 
 
 # Exercise 27
-# Write a function definition named is_multiple_of_five that takes in a number and returns True or False if the number is evenly divisible by 3.
+# Write a function definition named is_multiple_of_five that takes in a number and returns True or False if the number is evenly divisible by 5.
 
 assert is_multiple_of_five(3) == False
 assert is_multiple_of_five(15) == True
@@ -394,7 +394,7 @@ print("Exercise 27 is correct.")
 
 
 # Exercise 28
-# Write a function definition named is_multiple_of_both_three_and_five that takes in a number and returns True or False if the number is evenly divisible by 3.
+# Write a function definition named is_multiple_of_both_three_and_five that takes in a number and returns True or False if the number is evenly divisible by both 3 and 5, so evenly divisible by 15.
 
 assert is_multiple_of_both_three_and_five(15) == True
 assert is_multiple_of_both_three_and_five(45) == True
