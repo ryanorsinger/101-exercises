@@ -1376,7 +1376,7 @@ print("Exercise 100 is complete.")
 # Hint: Similarly to how we sometimes begin a function with setting a variable to zero, we need a starting place:
 # Hint: Consider creating a variable that is a dictionary with the keys "price" and "quantity" both set to 0. You can then compare each item's price and quantity total to the one from "most"
 
-assert most_spent_on_item == {
+assert most_spent_on_item(shopping_cart) == {
     "title": "chocolate",
     "price": 0.75,
     "quantity": 9
