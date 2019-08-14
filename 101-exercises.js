@@ -1,30 +1,26 @@
 // Keep this function definition in order to test expected vs. actual results
-const assert = function(actual, expected) {
+const assert = function(actual, expected, message = "") {
     if (actual !== expected) {
-        throw Error("Assert failed. The value of 'expected' does not match the value of the 'actual'");
+        throw Error("Assert failed. " + message);        
     }
 };
 
 
 // Example problem:
+// The lines below will test your answer. If you see an error, then it means that your answer is incorrect or incomplete.
+assert(doingJavaScriptRightNow, true)
+console.log("The example problem runs appropriately.")
+
+
 // Uncomment the line below and run this cell.
 // doingJavaScriptRightNow = true
 
-assert(doingJavaScriptRightNow, true)
-console.log("The example problem runs appropriately.")
-// The lines below will test your answer. If you see an error, then it means that your answer is incorrect or incomplete.
+assert(doingJavaScriptRightNow, true, "a variable holding a true boolean value should be equal to true"); 
+console.log("Exercise 0 is correct") 
 
 
-// 
-
-assert doing_python_right_now == True, "If you see a NameError, it means that the variable is not created and assigned a value. An 'Assertion Error' means that the value of the variable is incorrect." 
-print("Exercise 0 is correct") # This line will print if your solution passes the assertion above.
-
-
-
-
-# Exercise 1
-# On the line below, create a variable named on_mars_right_now and assign it the boolean value of False
+//  Exercise 1
+// On the line below, create a variable named on_mars_right_now and assign it the boolean value of False
 
 assert on_mars_right_now == False, "If you see a Name Error, be sure to create the variable and assign it a value."
 print("Exercise 1 is correct.")
