@@ -521,7 +521,7 @@ print("Exercise 35 is correct.")
 
 
 # Exercise 36
-# Write a function definition named quotient that takes in two numbers and returns only the quotient first argument quotient by the second argument.
+# Write a function definition named quotient that takes in two numbers and returns only the quotient of dividing the first argument by the second argument.
 
 assert quotient(27, 9) == 3
 assert quotient(5, 2) == 2
