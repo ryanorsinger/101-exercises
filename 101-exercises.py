@@ -1,20 +1,31 @@
-
+#!/usr/bin/env python
 # coding: utf-8
 
 # # Welcome to 101 Exercises for Python Fundamentals
+# 
+# Solving these exercises will help make you a better programmer. Solve them in order, because each solution builds scaffolding, working code, and knowledge you can use on future problems. Read the directions carefully, and have fun!
+# 
 # > "Learning to program takes a little bit of study and a *lot* of practice" - Luis Montealegre
 
+# ## Getting Started
+# 0. Create your own account on [Kaggle.com](https://www.kaggle.com/account/login?phase=startRegisterTab) and return to this page.
+# 1. Click the blue "Copy and Edit" in the upper-right part of this document to create your own copy to your own Kaggle account.
+# 2. As you complete exercises, be sure to click the blue "Save" button to create save points for your work.
+# 3. If you need to refresh and restart this learning environment, go to **Run** then select **Restart Session**. 
+# 4. If you need a fresh, blank copy of this document, go to https://www.kaggle.com/ryanorsinger/101-exercises/ and click "Copy and Edit"
+
 # ## Orientation
+# - This code notebook is composed of cells. Each cell is either text or Python code.
+# - To run a cell of code, click the "play button" icon to the left of the cell or click on the cell and press "Shift+Enter" on your keyboard. This will execute the Python code contained in the cell. Executing a cell that defines a variable is important before executing or authoring a cell that depends on that previously created variable assignment.
 # - **Expect to see lots of errors** the first time you load this page. 
 # - **Expect to see lots of errors** for all cells run without code that matches the assertion tests.
-# - Until you click "Fork" to make your own copy, you will see an entire page of errors. This is part of the automated tests.
-# - Once you've made your own fork, go to "Run" then "Restart Session" to clear up any error messages.
+# - Until you click the blue "Copy and Edit" button to make your own copy, you will see an entire page of errors. This is part of the automated tests.
 # - Each *assert* line is both an example and a test that tests for the presence and functionality of the instructed exercise. 
 # 
 # ## The only 3 conditions that produce no errors:
-# 1. When you make a fresh **fork** of the project.
+# 1. When you make a fresh **copy** of the project to your own account (by clicking "Copy and Edit")
 # 2. When you go to "Run" and then click "Restart Session"
-# 3. When every single assertion passes
+# 3. When every single assertion passes.
 # 
 # 
 # ## Outline
@@ -25,13 +36,37 @@
 # - The `print("Exercise is complete")` line will only run if your solution passes the assertion test(s)
 # - Be sure to create programmatic solutions that will work for all inputs:
 # - For example, calling the `is_even(2)` returns `True`, but your function should work for all even numbers, both positive and negative.
-# - To "run a cell" of code, click the cell and press "Shift+Enter" on your keyboard or click on the play button to the left of the cell. This will execute the Python code contained in the cell. Executing a cell that defines a variable is important before executing or authoring a cell that depends on that previously created variable assignment.
+# 
+# 
+# ## Guidance
+# - Get Python to do the work for you. For example, if the exercise instructs you to reverse a list of numbers, your job is to find the 
+# - Save often by clicking the blue "Save" button.
+# - If you need to clear the output or reset the notebook, go to "Run" then "Restart Session" to clear up any error messages.
+# - Do not move or alter the lines of code that contain the `assert` statements. Those are what run your solution and test its actual output vs. expected outputs.
+# - Seek to understand the problem before trying to solve it. Can you explain the problem to someone else in English? Can you explain the solution in English?
+# - Slow down and read any error messages you encounter. Error messages provide insight into how to resolve the error. When in doubt, put your exact error into a search engine and look for results that reference an identical or similar problem.
+# 
+# ## Get Python To Do The Work For You
+# One of the main jobs of a programming language is to help people solve problems programatically, so we don't have to do so much by hand. For example, it's easy for a person to manually reverse the list `[1, 2, 3]`, but imagine reversing a list of a million things or sorting a list of even a hundred things. When we write programmatic solutions in code, we are providing instructions to the computer to do a task. Computers follow the letter of the code, not the intent, and do exactly what they are told to do. In this way, Python can reverse a list of 3 numbers or 100 numbers or ten million numbers with the same instructions. Repetition is a key idea behind programming languages.
+# 
+# This means that your task with these exercises is to determine a sequence of steps that solve the problem and then find the Python code that will run those instructions. If you're sorting or reversing things by hand, you're not doing it right!
+# 
+# ## How To Discover How To Do Something in Python
+# 1. The first step is to make sure you know what the problem is asking.
+# 2. The second step is to determine, in English (or your first spoken language), what steps you need to take.
+# 3. Use a search engine to look for code examples to identical or similar problems.
+# 
+# One of the best ways to discover how to do things in Python is to use a search engine. Go to your favorite search engine and search for "how to reverse a list in Python" or "how to sort a list in Python". That's how both learners and professionals find answers and examples all the time. Search for what you want and add "in Python" and you'll get lots of code examples. Searching for "How to sum a list of numbers in Python" is a very effective way to discover exactly how to do that task.
 
-# ## Getting Started
-# 0. Create your own account on Kaggle.com
-# 1. Click "Fork" on this to create your own copy
-# 2. As you complete exercises, be sure to click "Commit" to create save points for your work.
-# 3. If you need to refresh and restart this learning environment, go to **Run** then select **Restart Session**. 
+# ### Learning to Program and Code
+# - You can make a new blank cell for Python code at any time in this document.
+# - If you want more freedom to explore learning Python in a blank notebook, go here https://www.kaggle.com/notebooks/welcome and make yourself a blank, new notebook.
+# - Programming is an intellectual activity of designing a solution. "Coding" means turning your programmatic solution into code w/ all the right syntax and parts of the programming language.
+# - Expect to make mistakes and adopt the attitude that **the error message provides the information you need to proceed**. You will put lots of error messages into search engines to learn this craft!
+# - Because computers have zero ability to read in between the lines or "catch the drift" or know what you mean, code only does what it is told to do.
+# - Code doesn't do what you *want* it to do, code does what you've told it to do.
+# - Before writing any code, figure out how you would solve the problem in spoken language to describe the sequence of steps in the solution.
+# - Think about your solution in English (or your natural language). It's **critical** to solve the problem in your natural language before trying to get a programming language to do the work.
 
 # ## Troubleshooting
 # - If this entire document shows "Name Error" for many cells, it means you should read the "Getting Started" instructions above to make your own copy.
@@ -42,12 +77,14 @@
 # - "Type Error" means that your data type provided is not accurate
 # - If your kernel freezes, click on "Run" then select "Restart Session"
 # - If you require additional troubleshooting assistance, click on "Help" and then "Docs" to access documentation for this platform.
-# - If you have discoverd a bug or typo, please double check then create a new issue at [https://github.com/ryanorsinger/101-exercises/issues](https://github.com/ryanorsinger/101-exercises/issues) to notify the author.
+# - If you have discoverd a bug or typo, please triple check your spelling then create a new issue at [https://github.com/ryanorsinger/101-exercises/issues](https://github.com/ryanorsinger/101-exercises/issues) to notify the author.
 
+# In[ ]:
 
 
 # Example problem:
 # Uncomment the line below and run this cell.
+# The hashtag "#" character in a line of Python code is the comment character. 
 # doing_python_right_now = True
 
 # The lines below will test your answer. If you see an error, then it means that your answer is incorrect or incomplete.
@@ -55,6 +92,7 @@ assert doing_python_right_now == True, "If you see a NameError, it means that th
 print("Exercise 0 is correct") # This line will print if your solution passes the assertion above.
 
 
+# In[ ]:
 
 
 # Exercise 1
@@ -64,6 +102,7 @@ assert on_mars_right_now == False, "If you see a Name Error, be sure to create t
 print("Exercise 1 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 2
@@ -74,6 +113,7 @@ assert fruits == ["mango", "banana", "guava", "kiwi", "strawberry"], "If you see
 print("Exercise 2 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 3
@@ -84,6 +124,7 @@ assert vegetables == ["eggplant", "broccoli", "carrot", "cauliflower", "zucchini
 print("Exercise 3 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 4
@@ -96,6 +137,7 @@ print("Exercise 4 is correct.")
 # ## List Operations
 # **Hint** Recommend finding and using built-in Python functionality whenever possible.
 
+# In[ ]:
 
 
 # Exercise 5
@@ -106,6 +148,7 @@ assert fruits == ["mango", "banana", "guava", "kiwi", "strawberry", "tomato"], "
 print("Exercise 5 is correct")
 
 
+# In[ ]:
 
 
 # Exercise 6
@@ -117,6 +160,7 @@ assert vegetables == ["eggplant", "broccoli", "carrot", "cauliflower", "zucchini
 print("Exercise 6 is correct")
 
 
+# In[ ]:
 
 
 # Exercise 7
@@ -128,6 +172,7 @@ assert numbers == [10, 9, 8, 7, 6, 5, 4, 3, 2, 1], "Assert Error means that the 
 print("Exercise 7 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 8
@@ -137,6 +182,7 @@ assert vegetables == ['broccoli', 'carrot', 'cauliflower', 'eggplant', 'tomato',
 print("Exercise 8 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 9
@@ -146,6 +192,7 @@ assert fruits == ['tomato', 'strawberry', 'mango', 'kiwi', 'guava', 'banana']
 print("Exercise 9 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 10
@@ -158,6 +205,7 @@ print("Exercise 10 is correct")
 # ## Basic Functions
 # ![](http://)**Hint** Be sure to `return` values from your function definitions. The assert statements will call your function(s) for you.
 
+# In[ ]:
 
 
 # Run this cell in order to generate some numbers to use in our functions after this.
@@ -175,6 +223,7 @@ print("The random negative even number", negative_even_number)
 print("The random negative odd number", negative_odd_number)
 
 
+# In[ ]:
 
 
 # Example function defintion:
@@ -188,6 +237,7 @@ assert say_hello("Astrud") == "Hello, Astrud!", "Double check the inputs and dat
 print("The example function definition ran appropriately")
 
 
+# In[ ]:
 
 
 # Another example function definition:
@@ -201,6 +251,7 @@ assert plus_two(-2) == 0
 print("The plus_two assertions executed appropriately... The second function definition example executed appropriately.")
 
 
+# In[ ]:
 
 
 # Exercise 11
@@ -214,6 +265,7 @@ assert add_one(negative_odd_number) == negative_odd_number + 1, "Ensure that the
 print("Exercise 11 is correct.") 
 
 
+# In[ ]:
 
 
 # Exercise 12
@@ -226,6 +278,7 @@ assert is_positive(negative_even_number) == False, "Ensure that the function is 
 print("Exercise 12 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 13
@@ -238,6 +291,7 @@ assert is_negative(negative_even_number) == True, "Ensure that the function is d
 print("Exercise 13 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 14
@@ -250,6 +304,7 @@ assert is_odd(negative_even_number) == False, "Ensure that the function is defin
 print("Exercise 14 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 15
@@ -263,6 +318,7 @@ assert is_even(negative_even_number) == True, "Ensure that the function is defin
 print("Exercise 15 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 16
@@ -277,6 +333,7 @@ assert identity(negative_even_number) == negative_even_number, "Ensure that the 
 print("Exercise 16 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 17
@@ -290,6 +347,7 @@ assert is_positive_odd(negative_even_number) == False, "Double check your syntax
 print("Exercise 17 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 18
@@ -303,6 +361,7 @@ assert is_positive_even(negative_even_number) == False, "Double check your synta
 print("Exercise 18 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 19
@@ -316,6 +375,7 @@ assert is_negative_odd(negative_even_number) == False, "Double check your syntax
 print("Exercise 19 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 20
@@ -329,6 +389,7 @@ assert is_negative_even(negative_even_number) == True, "Double check your syntax
 print("Exercise 20 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 21
@@ -343,6 +404,7 @@ assert half(negative_even_number) == negative_even_number / 2
 print("Exercise 21 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 22
@@ -357,6 +419,7 @@ assert double(negative_even_number) == negative_even_number * 2
 print("Exercise 22 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 23
@@ -371,6 +434,7 @@ assert triple(negative_even_number) == negative_even_number * 3
 print("Exercise 23 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 24
@@ -385,6 +449,7 @@ assert reverse_sign(negative_even_number) == negative_even_number * -1
 print("Exercise 24 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 25
@@ -399,6 +464,7 @@ assert absolute_value(negative_even_number) == negative_even_number * -1
 print("Exercise 25 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 26
@@ -412,6 +478,7 @@ assert is_multiple_of_three(10) == False
 print("Exercise 26 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 27
@@ -425,6 +492,7 @@ assert is_multiple_of_five(10) == True
 print("Exercise 27 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 28
@@ -438,6 +506,7 @@ assert is_multiple_of_both_three_and_five(4) == False
 print("Exercise 28 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 29
@@ -450,6 +519,7 @@ assert square(positive_odd_number) == positive_odd_number * positive_odd_number
 print("Exercise 29 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 30
@@ -461,6 +531,7 @@ assert add(5, 7) == 12
 print("Exercise 30 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 31
@@ -473,6 +544,7 @@ assert cube(positive_odd_number) == positive_odd_number * positive_odd_number * 
 print("Exercise 31 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 32
@@ -484,6 +556,7 @@ assert square_root(81) == 9.0
 print("Exercise 32 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 33
@@ -495,6 +568,7 @@ assert subtract(12, 2) == 10
 print("Exercise 33 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 34
@@ -506,6 +580,7 @@ assert multiply(5, 2) == 10
 print("Exercise 34 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 35
@@ -518,10 +593,11 @@ assert divide(10, 2) == 5
 print("Exercise 35 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 36
-# Write a function definition named quotient that takes in two numbers and returns only the quotient of dividing the first argument by the second argument.
+# Write a function definition named quotient that takes in two numbers and returns only the quotient from dividing the first argument by the second argument.
 
 assert quotient(27, 9) == 3
 assert quotient(5, 2) == 2
@@ -529,6 +605,7 @@ assert quotient(10, 3) == 3
 print("Exercise 36 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 37
@@ -540,6 +617,7 @@ assert remainder(7, 5) == 2
 print("Exercise 37 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 38
@@ -551,6 +629,7 @@ assert sum_of_squares(2, 4) == 20
 print("Exercise 38 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 39
@@ -564,6 +643,7 @@ assert times_two_plus_three(5) == 13
 print("Exercise 39 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 40
@@ -576,11 +656,12 @@ assert area_of_rectangle(5.3, 10.3) == 54.59
 print("Exercise 40 is correct.")
 
 
+# In[ ]:
 
 
 import math
 # Exercise 41
-# Write a function definition named area_of_circle that takes in a number representing a circle's radius and returns the area of the circle
+# Write a function definition named area_of_circle that takes in a number representing a circle's radius and returns the area of the circl
 
 assert area_of_circle(3) == 28.274333882308138
 assert area_of_circle(5) == 78.53981633974483
@@ -588,6 +669,7 @@ assert area_of_circle(7) == 153.93804002589985
 print("Exercise 41 is correct.")
 
 
+# In[ ]:
 
 
 import math
@@ -602,6 +684,7 @@ print("Exercise 42 is correct.")
 
 # ## Functions working with strings
 
+# In[ ]:
 
 
 # Exercise 43
@@ -615,6 +698,7 @@ assert is_vowel("y") == False
 print("Exercise 43 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 44
@@ -627,6 +711,7 @@ assert has_vowels("wyrd") == False
 print("Exercise 44 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 45
@@ -640,6 +725,7 @@ assert count_vowels("wyrd") == 0
 print("Exercise 45 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 46
@@ -652,6 +738,7 @@ assert remove_vowels("QQQQ") == "QQQQ"
 print("Exercise 46 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 47
@@ -663,6 +750,7 @@ assert starts_with_vowel("mango") == False
 print("Exercise 47 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 48
@@ -675,6 +763,7 @@ assert ends_with_vowel("spinach") == False
 print("Exercise 48 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 49
@@ -688,6 +777,7 @@ print("Exercise 49 is correct.")
 
 # ## Accessing List Elements
 
+# In[ ]:
 
 
 # Exercise 50
@@ -699,6 +789,7 @@ assert first(["python", "is", "awesome"]) == "python"
 print("Exercise 50 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 51
@@ -710,6 +801,7 @@ assert second(["python", "is", "awesome"]) == "is"
 print("Exercise 51 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 52
@@ -721,6 +813,7 @@ assert third(["python", "is", "awesome"]) == "awesome"
 print("Exercise 52 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 53
@@ -732,6 +825,7 @@ assert forth(["python", "is", "awesome", "right?"]) == "right?"
 print("Exercise 53 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 54
@@ -744,6 +838,7 @@ assert last(["kiwi", "mango", "guava"]) == "guava"
 print("Exercise 54 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 55
@@ -756,6 +851,7 @@ assert second_to_last(["kiwi", "mango", "guava"]) == "mango"
 print("Exercise 55 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 56
@@ -768,6 +864,7 @@ assert third_to_last(["strawberry", "kiwi", "mango", "guava"]) == "kiwi"
 print("Exercise 56 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 57
@@ -779,6 +876,7 @@ assert first_and_second(["strawberry", "kiwi", "mango", "guava"]) == ["strawberr
 print("Exercise 57 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 58
@@ -790,6 +888,7 @@ assert first_and_last(["strawberry", "kiwi", "mango", "guava"]) == ["strawberry"
 print("Exercise 58 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 59
@@ -803,6 +902,7 @@ print("Exercise 59 is correct.")
 
 # ## Functions to describe data 
 
+# In[ ]:
 
 
 # Exercise 60
@@ -814,6 +914,7 @@ assert sum_all([0, 5, 6]) == 11
 print("Exercise 60 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 61
@@ -825,6 +926,7 @@ assert mean([1, 5, 6]) == 4
 print("Exercise 61 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 62
@@ -837,6 +939,7 @@ assert median([1, 2, 5, 6]) == 3.5
 print("Exercise 62 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 63
@@ -848,6 +951,7 @@ assert mode([2, 2, 3, 3, 3]) == 3
 print("Exercise 63 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 64
@@ -861,12 +965,14 @@ print("Exercise 64 is correct.")
 
 # ## Applying functions to lists
 
+# In[ ]:
 
 
 # Run this cell in order to use the following list of numbers for the next exercises
 numbers = [-5, -4, -3, -2, -1, 1, 2, 3, 4, 5] 
 
 
+# In[ ]:
 
 
 # Exercise 65
@@ -878,6 +984,7 @@ assert get_highest_number([-5, -3, 1]) == 1
 print("Exercise 65 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 66
@@ -889,6 +996,7 @@ assert get_smallest_number([-4, -3, 1]) == -4
 print("Exercise 66 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 67
@@ -900,6 +1008,7 @@ assert only_odd_numbers([-4, -3, 1]) == [-3, 1]
 print("Exercise 67 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 68
@@ -911,6 +1020,7 @@ assert only_even_numbers([-4, -3, 1]) == [-4]
 print("Exercise 68 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 69
@@ -922,6 +1032,7 @@ assert only_positive_numbers([-4, -3, 1]) == [1]
 print("Exercise 69 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 70
@@ -933,6 +1044,7 @@ assert only_negative_numbers([-4, -3, 1]) == [-4, -3]
 print("Exercise 70 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 71
@@ -945,6 +1057,7 @@ assert has_evens([]) == False
 print("Exercise 71 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 72
@@ -957,6 +1070,7 @@ assert count_evens([5, 6, 7, 8] ) == 2
 print("Exercise 72 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 73
@@ -969,6 +1083,7 @@ assert has_odds([2, 4, 6]) == False
 print("Exercise 73 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 74
@@ -981,6 +1096,7 @@ assert count_odds([2, 4, 6]) == 0
 print("Exercise 74 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 75
@@ -992,6 +1108,7 @@ assert count_negatives([3, 3, 3]) == 0
 print("Exercise 75 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 76
@@ -1004,6 +1121,7 @@ assert count_positives([-2, -1, -5]) == 0
 print("Exercise 76 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 77
@@ -1016,6 +1134,7 @@ assert only_positive_evens([2, 3, 4, -1, -5]) == [2, 4]
 print("Exercise 77 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 78
@@ -1028,6 +1147,7 @@ assert only_positive_odds([2, 3, 4, -1, -5]) == [3]
 print("Exercise 78 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 79
@@ -1040,6 +1160,7 @@ assert only_negative_evens([-2, 3, 4, -1, -4]) == [-2, -4]
 print("Exercise 79 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 80
@@ -1052,6 +1173,7 @@ assert only_negative_odds([2, -3, 4, -1, -4]) == [-3, -1]
 print("Exercise 80 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 81
@@ -1063,6 +1185,7 @@ assert shortest_string(["mary", "had", "a", "little", "lamb"]) == "a"
 print("Exercise 81 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 82
@@ -1077,6 +1200,7 @@ print("Exercise 82 is correct.")
 # ## Working with sets
 # **Hint** Take a look at the `set` function in Python, the `set` data type, and built-in `set` methods.
 
+# In[ ]:
 
 
 # Example set function usage
@@ -1084,6 +1208,7 @@ print(set("kiwi"))
 print(set([1, 2, 2, 3, 3, 3, 4, 4, 4, 4]))
 
 
+# In[ ]:
 
 
 # Exercise 83
@@ -1095,6 +1220,7 @@ assert get_unique_values(["mary", "had", "a", "little", "lamb", "little", "lamb"
 print("Exercise 83 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 84
@@ -1106,6 +1232,7 @@ assert get_unique_values_from_two_lists(["tomato", "mango", "kiwi"], ["eggplant"
 print("Exercise 84 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 85
@@ -1117,6 +1244,7 @@ assert get_values_in_common(["tomato", "mango", "kiwi"], ["eggplant", "tomato", 
 print("Exercise 85 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 86
@@ -1131,6 +1259,7 @@ print("Exercise 86 is correct.")
 # ## Working with Dictionaries
 # 
 
+# In[ ]:
 
 
 # Run this cell in order to have these two dictionary variables defined.
@@ -1149,6 +1278,7 @@ thomas_paper = {
 }
 
 
+# In[ ]:
 
 
 # Exercise 87
@@ -1159,6 +1289,7 @@ assert get_paper_title(thomas_paper) == "A mathematical model of glutathione met
 print("Exercise 87 is correct.")
 
 
+# In[ ]:
 
 
 # Exercise 88
@@ -1169,6 +1300,7 @@ assert get_year_published(thomas_paper) == 2008
 print("Exercise 88 is correct.")
 
 
+# In[ ]:
 
 
 # Run this code to create data for the next two questions
@@ -1179,6 +1311,7 @@ book = {
 }
 
 
+# In[ ]:
 
 
 # Exercise 89
@@ -1188,6 +1321,7 @@ assert get_price(book) == 36.99
 print("Exercise 89 is complete.")
 
 
+# In[ ]:
 
 
 # Exercise 90
@@ -1201,6 +1335,7 @@ print("Exercise 90 is complete.")
 # ## Working with Lists of Dictionaries
 # **Hint** If you need an example of lists of dictionaries, see [https://gist.github.com/ryanorsinger/fce8154028a924c1073eac24c7c3f409](https://gist.github.com/ryanorsinger/fce8154028a924c1073eac24c7c3f409)
 
+# In[ ]:
 
 
 # Run this cell in order to have some setup data for the next exercises
@@ -1228,6 +1363,7 @@ books = [
 ]
 
 
+# In[ ]:
 
 
 # Exercise 91
@@ -1237,6 +1373,7 @@ assert get_number_of_books(books) == 4
 print("Exercise 91 is complete.")
 
 
+# In[ ]:
 
 
 # Exercise 92
@@ -1246,6 +1383,7 @@ assert total_of_book_prices(books) == 122.9
 print("Exercise 92 is complete.")
 
 
+# In[ ]:
 
 
 # Exercise 93
@@ -1255,10 +1393,11 @@ assert get_average_book_price(books) == 30.725
 print("Exercise 93 is complete.")
 
 
+# In[ ]:
 
 
 # Exercise 94
-# Write a function called highest_priced_book that takes in the above defined list of dictionaries "books" and returns the dictionary containing the title, price, and author of the book with the highest priced book.
+# Write a function called highest_price_book that takes in the above defined list of dictionaries "books" and returns the dictionary containing the title, price, and author of the book with the highest priced book.
 # Hint: Much like sometimes start functions with a variable set to zero, you may want to create a dictionary with the price set to zero to compare to each dictionary's price in the list
 
 assert highest_price_book(books) == {
@@ -1270,6 +1409,7 @@ assert highest_price_book(books) == {
 print("Exercise 94 is complete")
 
 
+# In[ ]:
 
 
 # Exercise 95
@@ -1285,6 +1425,7 @@ assert lowest_price_book(books) == {
 print("Exercise 95 is complete.")
 
 
+# In[ ]:
 
 
 shopping_cart = {
@@ -1319,6 +1460,7 @@ shopping_cart = {
 }
 
 
+# In[ ]:
 
 
 # Exercise 96
@@ -1329,6 +1471,7 @@ assert get_tax_rate(shopping_cart) == .08
 print("Exercise 96 is complete")
 
 
+# In[ ]:
 
 
 # Exercise 97
@@ -1339,6 +1482,7 @@ assert number_of_item_types(shopping_cart) == 5
 print("Exercise 97 is complete.")
 
 
+# In[ ]:
 
 
 # Exercise 98
@@ -1349,6 +1493,7 @@ assert total_number_of_items(shopping_cart) == 17
 print("Exercise 98 is complete.")
 
 
+# In[ ]:
 
 
 # Exercise 99
@@ -1358,6 +1503,7 @@ assert get_average_item_price(shopping_cart) == 2.1420000000000003
 print("Exercise 99 is complete.")
 
 
+# In[ ]:
 
 
 # Exercise 100
@@ -1368,6 +1514,7 @@ assert get_average_spent_per_item(shopping_cart) == 1.333529411764706
 print("Exercise 100 is complete.")
 
 
+# In[ ]:
 
 
 # Exercise 101
