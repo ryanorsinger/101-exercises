@@ -689,7 +689,7 @@ print("Exercise 42 is correct.")
 
 # Exercise 43
 # Write a function definition named is_vowel that takes in value and returns True if the value is a, e, i, o, u in upper or lower case.
-
+# If you need some guidance with the next few problems, read through [this example code](https://gist.github.com/ryanorsinger/f758599c886549e7615ec43488ae514c)
 assert is_vowel("a") == True
 assert is_vowel("U") == True
 assert is_vowel("banana") == False
