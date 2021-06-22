@@ -8,30 +8,23 @@
 # > "Learning to program takes a little bit of study and a *lot* of practice" - Luis Montealegre
 
 # ## Getting Started
-# 0. Create your own account on [Kaggle.com](https://www.kaggle.com/account/login?phase=startRegisterTab) and return to this page.
-# 1. Click the blue "Copy and Edit" in the upper-right part of this document to create your own copy to your own Kaggle account.
-# 2. As you complete exercises, be sure to click the blue "Save" button to create save points for your work.
-# 3. If you need to refresh and restart this learning environment, go to **Run** then select **Restart Session**. 
-# 4. If you need a fresh, blank copy of this document, go to https://www.kaggle.com/ryanorsinger/101-exercises/ and click "Copy and Edit"
+# 1. Go to https://colab.research.google.com/github/ryanorsinger/101-exercises/blob/main/101-exercises.ipynb
+# 2. To save your work to your Google Drive, go to File then "Save Copy in Drive".
+# 3. Your own work will now appear in your Google Drive account!
+# 
+# If you need a fresh, blank copy of this document, go to https://colab.research.google.com/github/ryanorsinger/101-exercises/blob/main/101-exercises.ipynb and save a fresh copy in your Google Drive.
 
 # ## Orientation
 # - This code notebook is composed of cells. Each cell is either text or Python code.
 # - To run a cell of code, click the "play button" icon to the left of the cell or click on the cell and press "Shift+Enter" on your keyboard. This will execute the Python code contained in the cell. Executing a cell that defines a variable is important before executing or authoring a cell that depends on that previously created variable assignment.
-# - **Expect to see lots of errors** the first time you load this page. 
-# - **Expect to see lots of errors** for all cells run without code that matches the assertion tests.
-# - Until you click the blue "Copy and Edit" button to make your own copy, you will see an entire page of errors. This is part of the automated tests.
 # - Each *assert* line is both an example and a test that tests for the presence and functionality of the instructed exercise. 
-# 
-# ## The only 3 conditions that produce no errors:
-# 1. When you make a fresh **copy** of the project to your own account (by clicking "Copy and Edit")
-# 2. When you go to "Run" and then click "Restart Session"
-# 3. When every single assertion passes.
 # 
 # 
 # ## Outline
 # - Each cell starts with a problem statement that describes the exercise to complete.
 # - Underneath each problem statement, learners will need to write code to produce an answer.
-# - The **assert** lines test to see that your code solves the problem appropriately
+# - The **assert** lines test to see that your code solves the problem appropriately.
+# - Do not alter or delete the assertion tests, since those are providing automated testing.
 # - Many exercises will rely on previous solutions to be correctly completed
 # - The `print("Exercise is complete")` line will only run if your solution passes the assertion test(s)
 # - Be sure to create programmatic solutions that will work for all inputs:
@@ -60,7 +53,7 @@
 
 # ### Learning to Program and Code
 # - You can make a new blank cell for Python code at any time in this document.
-# - If you want more freedom to explore learning Python in a blank notebook, go here https://www.kaggle.com/notebooks/welcome and make yourself a blank, new notebook.
+# - If you want more freedom to explore learning Python in a blank notebook, go here https://colab.research.google.com/#create=true and make yourself a blank, new notebook.
 # - Programming is an intellectual activity of designing a solution. "Coding" means turning your programmatic solution into code w/ all the right syntax and parts of the programming language.
 # - Expect to make mistakes and adopt the attitude that **the error message provides the information you need to proceed**. You will put lots of error messages into search engines to learn this craft!
 # - Because computers have zero ability to read in between the lines or "catch the drift" or know what you mean, code only does what it is told to do.
@@ -78,6 +71,13 @@
 # - If your kernel freezes, click on "Run" then select "Restart Session"
 # - If you require additional troubleshooting assistance, click on "Help" and then "Docs" to access documentation for this platform.
 # - If you have discoverd a bug or typo, please triple check your spelling then create a new issue at [https://github.com/ryanorsinger/101-exercises/issues](https://github.com/ryanorsinger/101-exercises/issues) to notify the author.
+# 
+# ## What to do when you don't know what to do next
+# - When the exercise asks you to reverse an list, the way forward is to search for "How to reverse a list in Python" in your favorite search engine.
+# - When the exercise asks you to check if a number is even, the way forward is to search for "how to check if a number is even in Python".
+# - When the exercise has you calculate the area of a circle, the way forward is to search for "how to calculate the area of a circle in Python" or "How to get pi in Python".
+# 
+# > The pattern for finding what you need in JavaScript is to rely very heavily on search engine searches so you can find examples of working code and discussions about code that speak to your questions.
 
 # In[ ]:
 
@@ -275,6 +275,7 @@ assert is_positive(positive_odd_number) == True, "Ensure that the function is de
 assert is_positive(positive_even_number) == True, "Ensure that the function is defined, named properly, and returns the correct value"
 assert is_positive(negative_odd_number) == False, "Ensure that the function is defined, named properly, and returns the correct value"
 assert is_positive(negative_even_number) == False, "Ensure that the function is defined, named properly, and returns the correct value"
+assert is_positive(0) == False, "Zero is not a positive number."
 print("Exercise 12 is correct.")
 
 
@@ -288,6 +289,7 @@ assert is_negative(positive_odd_number) == False, "Ensure that the function is d
 assert is_negative(positive_even_number) == False, "Ensure that the function is defined, named properly, and returns the correct value"
 assert is_negative(negative_odd_number) == True, "Ensure that the function is defined, named properly, and returns the correct value"
 assert is_negative(negative_even_number) == True, "Ensure that the function is defined, named properly, and returns the correct value"
+assert is_negative(0) == False, "Zero is not a negative number."
 print("Exercise 13 is correct.")
 
 
@@ -683,18 +685,30 @@ print("Exercise 42 is correct.")
 
 
 # ## Functions working with strings
+# If you need some guidance working with the next few problems, recommend reading through [this example code](https://gist.github.com/ryanorsinger/f758599c886549e7615ec43488ae514c)
 
 # In[ ]:
 
 
 # Exercise 43
 # Write a function definition named is_vowel that takes in value and returns True if the value is a, e, i, o, u in upper or lower case.
-# If you need some guidance with the next few problems, read through [this example code](https://gist.github.com/ryanorsinger/f758599c886549e7615ec43488ae514c)
+
+
 assert is_vowel("a") == True
+assert is_vowel("e") == True
+assert is_vowel("i") == True
+assert is_vowel("o") == True
+assert is_vowel("u") == True
+assert is_vowel("A") == True
+assert is_vowel("E") == True
+assert is_vowel("I") == True
+assert is_vowel("O") == True
 assert is_vowel("U") == True
 assert is_vowel("banana") == False
 assert is_vowel("Q") == False
 assert is_vowel("y") == False
+assert is_vowel("aei") == False
+assert is_vowel("iou") == False
 print("Exercise 43 is correct.")
 
 
@@ -968,13 +982,6 @@ print("Exercise 64 is correct.")
 # In[ ]:
 
 
-# Run this cell in order to use the following list of numbers for the next exercises
-numbers = [-5, -4, -3, -2, -1, 1, 2, 3, 4, 5] 
-
-
-# In[ ]:
-
-
 # Exercise 65
 # Write a function definition named get_highest_number that takes in sequence of numbers and returns the largest number.
 
@@ -992,7 +999,7 @@ print("Exercise 65 is correct.")
 
 assert get_smallest_number([1, 3, 2]) == 1
 assert get_smallest_number([5, -5, -4, -3, -2, -1, 1, 2, 3, 4]) == -5
-assert get_smallest_number([-4, -3, 1, -10]) == -4
+assert get_smallest_number([-4, -3, 1, -10]) == -10
 print("Exercise 66 is correct.")
 
 
@@ -1005,6 +1012,7 @@ print("Exercise 66 is correct.")
 assert only_odd_numbers([1, 2, 3]) == [1, 3]
 assert only_odd_numbers([-5, -4, -3, -2, -1, 1, 2, 3, 4, 5]) == [-5, -3, -1, 1, 3, 5]
 assert only_odd_numbers([-4, -3, 1]) == [-3, 1]
+assert only_odd_numbers([2, 2, 2, 2, 2]) == []
 print("Exercise 67 is correct.")
 
 
@@ -1017,6 +1025,7 @@ print("Exercise 67 is correct.")
 assert only_even_numbers([1, 2, 3]) == [2]
 assert only_even_numbers([-5, -4, -3, -2, -1, 1, 2, 3, 4, 5]) == [-4, -2, 2, 4]
 assert only_even_numbers([-4, -3, 1]) == [-4]
+assert only_even_numbers([1, 1, 1, 1, 1, 1]) == []
 print("Exercise 68 is correct.")
 
 
@@ -1534,5 +1543,3 @@ print("Exercise 101 is complete.")
 # Created by [Ryan Orsinger](https://ryanorsinger.com)
 # 
 # Source code on [https://github.com/ryanorsinger/101-exercises](https://github.com/ryanorsinger/101-exercises)
-# 
-# Proudly hosted on [Kaggle.com](https://kaggle.com/ryanorsinger)
